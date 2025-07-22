@@ -1,59 +1,24 @@
-# 🌱 Survival Modelling of Menopause Onset Using Dietary Supplement Intake
+🧪 Supplement Use and Menopause Timing – MSc Dissertation Project
+This repository contains the full R code for the analysis conducted in my MSc Data Science dissertation:
+“The Role of Dietary Supplements in Modulating Menopause Onset: A Comprehensive Analysis of Nutritional and Lifestyle Influences.”
 
-This project explores the impact of dietary supplement intake and lifestyle factors on the timing of menopause using **Cox Proportional Hazards** and **Gradient Boosting Machine** models.
+📁 Contents
+main_analysis.R – Complete script covering data preprocessing, descriptive analysis, Cox proportional hazards modeling, cross-validation, and machine learning (GBM & Random Forest).
 
-The analysis is based on 3,566 women from the **UK Women's Cohort Study**, using high-dimensional dietary and health data. The study aims to identify modifiable lifestyle predictors of early or delayed menopause — a factor linked to several chronic diseases.
+Dissertation.pdf – Full academic dissertation document detailing the methodology, results, and interpretation.
 
----
+⚠️ Data Access
+The dataset used in this project cannot be publicly shared due to GDPR and ethical restrictions associated with sensitive health information from the UK Biobank study.
 
-## 🎯 Objectives
-- Evaluate the relationship between supplement use and menopause onset
-- Build statistical models for time-to-event prediction
-- Compare Cox PH and GBM model performance
-- Translate results into public health insight
+If required, a synthetic or anonymized dataset structure can be provided for demonstration purposes.
 
----
+📊 Techniques Used
+Cox Proportional Hazards Model with covariate adjustment
 
-## 📁 Project Files
+Proportional hazards testing and survival curves
 
-| File | Description |
-|------|-------------|
-| `report/dissertation_supplements_menopause.pdf` | Full dissertation document |
-| `scripts/survival_model_analysis.R` | R code (Cox model, GBM, preprocessing) |
-| `data/simulated_menopause_data.csv` | (Optional) fake dataset for demonstration |
+Gradient Boosting & Random Forest classifiers to identify key predictors
 
----
+Cross-validation of survival models
 
-## 🧠 Methodology
-
-- **Data Source**: UK Women's Cohort Study (UKWCS)
-- **Target Variable**: Age at natural menopause
-- **Models**:
-  - Cox Proportional Hazards Model
-  - Gradient Boosting Machine (GBM)
-- **Tools**: R, `survival`, `gbm`, `tidyverse`, `survminer`
-- **Evaluation Metrics**: Concordance Index (C-index), calibration, residual analysis
-
----
-
-## 📈 Results Snapshot
-
-- Women consuming **supplements with phytoestrogens** experienced slightly later menopause
-- **Higher BMI and smoking** predicted earlier menopause
-- GBM outperformed Cox PH model in predictive accuracy
-
----
-
-## 📬 Author
-
-**Shekhina Mary Jebaraj**  
-MSc Data Science, University of Leeds  
-📍 Leeds, UK  
-📧 shekhinamaryjebaraj@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/shekhinamaryjebaraj)
-
----
-
-## 📘 Citation
-
-> Jebaraj, S.M. (2025). *The Role of Dietary Supplements in Modulating Menopause Onset*, University of Leeds MSc Dissertation.
+Data visualization with ggplot2, survminer, and corrplot
